@@ -19,4 +19,10 @@ export class SetupComponent implements OnInit {
   constructor(private store: LocalStorageService, private router: Router) {}
 
   ngOnInit() {}
+
+  completeSetup(): void {
+    this.store.set(INIT_FLAG, true);
+    this.store.set(START_USING_DATE, getTodayTime());
+    this.store.set(USERNAME, this.username);
+  }
 }
