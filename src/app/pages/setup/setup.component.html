@@ -1,0 +1,15 @@
+<div class="full-screen page-content">
+  <div class="wrapper">
+    <img src="./assets/imgs/logo.png" alt="logo" class="logo" />
+    <h1 class="title">Today</h1>
+    <input
+      type="text"
+      name="username"
+      nz-input
+      [(ngModel)]="username"
+      placeholder="输入你喜欢的用户名"
+    />
+    <button class="submit" nz-button [disabled]="!username">开始</button>
+    <div class="copy-right">Copyright © 2019 Bruce Chen</div>
+  </div>
+</div>
